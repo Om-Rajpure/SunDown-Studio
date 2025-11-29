@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page1{
+    padding: 0 2vw;
+    height: 100vh;
+    width: 100vw;
+    background: #EFEAE3;
+    position: relative;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.205);
+
+}
+
+nav{
+    padding: 2vw 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-2{
+    align-items: center;
+    display: flex;
+    gap: 1vw;
+}
+.nav-2 h4{
+    padding: 10px 20px;
+    border: 2px solid rgba(0, 0, 0, 0.336);
+    border-radius: 50px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.64);
+    font-size: 18px;
+    position: relative;
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.nav-2 h4::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    transition: all 0.4s ease;
+}
+
+.nav-2 a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    z-index: 9;
+    position: relative;
+}
+
+.nav-2 h4:hover a{
+    color: white;
+}
+
+.nav-2 h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+
+#center{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 2vw ;
+}
+#left h3{
+    width: 70%;
+    font-size: 1.8vw;
+    line-height: 2.3vw;
+    font-family: 'Poppins', sans-serif;
+
+}
+#right h1{
+    font-size: 10vw;
+    line-height: 8vw;
+    text-align: right;
+}
